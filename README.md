@@ -87,5 +87,5 @@ MyStudyMap/
 
 ## 📄 许可协议 / License
 
-本项目基于 MIT License 开源发布，详细内容请查看 LICENSE 文件。  
-This project is released under the MIT License. See the LICENSE file for details.
+本项目仅用于个人展示用途，如需使用请联系作者。  
+This project is for personal showcase purposes only. Please contact the author if you wish to reuse it.
