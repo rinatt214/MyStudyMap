@@ -41,8 +41,6 @@ ollama run llama3
 
 ## 📁 项目结构 / Project Structure
 
-## 📁 项目结构 / Project Structure
-
 ```bash
 MyStudyMap/
 ├── app.py                   # Streamlit 主程序 / Main Streamlit app
