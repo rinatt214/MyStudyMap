@@ -21,8 +21,10 @@ from parser.ai_parser import extract_info
 
 from handlers.learning_handler import handle_learning
 from handlers.fitness_handler import handle_fitness
+from handlers.diet_handler import handle_diet
 from display.show_learning_charts import show_learning_charts
 from display.show_fitness_charts import show_fitness_charts
+from display.show_diet_charts import show_diet_charts
 
 #设置网页标题
 st.set_page_config(page_title="MyStudyMap", layout="wide")
@@ -52,15 +54,21 @@ if st.button("提交并解析"):
         elif content_type == "健身":
             handle_fitness(result)
         
+        elif content_type == "饮食":
+            handle_diet(result)
+        
         else:
             st.warning("❓ 无法识别内容类型，请检查输入内容")
 
 # --- 展示模块 ---
 st.sidebar.title("📊 图表展示")
-main_choice = st.sidebar.radio("选择分类：", ["学习", "健身"])
+main_choice = st.sidebar.radio("选择分类：", ["学习", "健身", "饮食"])
 
 if main_choice == "学习":
     show_learning_charts()
 
 elif main_choice == "健身":
     show_fitness_charts()
+
+elif main_choice == "饮食":
+    show_diet_charts()

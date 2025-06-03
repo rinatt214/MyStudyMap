@@ -1,7 +1,7 @@
 from input_handler import get_user_input
 from parser.ai_parser import extract_learning_info
 from parser.fitness_ai_helper import parse_fitness_text_with_ai
-from storage.data_store import save_learning_record, save_fitness_record
+#from storage.data_store import save_learning_record, save_fitness_record
 
 def main():
     print("📌 请选择记录类型：")

@@ -11,7 +11,7 @@ import os
 from datetime import datetime
 
 DATA_PATH = "data"
-FIT_FILE = os.path.join(DATA_PATH, "fitness.json")
+FIT_FILE = os.path.join(DATA_PATH, "learning.json")
 os.makedirs(DATA_PATH, exist_ok=True)
 
 def load_all_data():
