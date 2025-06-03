@@ -48,29 +48,36 @@ MyStudyMap/
 ├── requirements.txt         # 依赖包列表 / Python dependency list
 │
 ├── data/                    # JSON 数据存储 / Data storage (JSON)
-│   └── learning.json
+│   ├── learning.json
+│   ├── fitness.json
+│   └── diet.json
 │
 ├── display/                 # 图表显示模块 / Display charts
+│   ├── show_learning_charts.py
 │   ├── show_fitness_charts.py
-│   └── show_learning_charts.py
+│   └── show_diet_charts.py
 │
-├── handlers/                # 处理用户输入与数据的逻辑 / Input and data handlers
+├── handlers/                # 输入处理与保存逻辑 / Input and save handlers
+│   ├── learning_handler.py
 │   ├── fitness_handler.py
-│   └── learning_handler.py
+│   └── diet_handler.py
 │
-├── parser/                  # AI 模型解析相关模块 / AI parsing modules
+├── parser/                  # AI 解析模块 / AI parsing logic
 │   ├── ai_parser.py
 │   └── fitness_ai_helper.py
 │
-├── storage/                 # 数据存储逻辑 / JSON storage logic
+├── storage/                 # 数据存储模块 / JSON record save/load
+│   ├── learning_store.py
 │   ├── fitness_store.py
-│   └── learning_store.py
+│   └── diet_store.py
 │
-├── visualizer/              # 可视化生成模块 / Visualization components
+├── visualizer/              # 可视化图表生成 / Visualization components
+│   ├── wordcloud_gen.py
+│   ├── trend_chart.py
 │   ├── fitness_chart.py
 │   ├── fitness_wordcloud.py
-│   ├── trend_chart.py
-│   └── wordcloud_gen.py
+│   ├── diet_trend.py
+│   └── diet_stack_chart.py
 ```
 
 ## ✅ 功能进展 / Features & Progress
@@ -81,7 +88,7 @@ MyStudyMap/
 - [x] 数据本地保存为 JSON 文件 / Save data locally in JSON format
 - [x] 可视化展示（词云图、趋势图、训练部位图等） / Visualization (word cloud, trend chart, body part chart)
 - [x] 使用模块化架构，方便维护和扩展 / Modular architecture for easy extension
-- [ ] 新增“饮食记录”模块（开发中） / Add "diet tracking" module (in progress)
+- [x] 新增“饮食记录”模块 / Add "diet tracking" module 
 - [ ] 用户多账户支持（规划中） / Multi-user support (planned)
 - [ ] 数据导入导出功能 / Data import/export feature (planned)
 
